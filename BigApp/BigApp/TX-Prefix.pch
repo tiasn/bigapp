@@ -1,0 +1,16 @@
+//
+//  TX-Prefix.pch
+//  BigApp
+//
+//  Created by LTX on 2017/7/7.
+//  Copyright © 2017年 LTX. All rights reserved.
+//  $(SRCROOT)/BigApp/TX-Prefix.pch  相对路径
+
+#ifndef TX_Prefix_pch
+#define TX_Prefix_pch
+
+#import "TXMacro.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* TX_Prefix_pch */

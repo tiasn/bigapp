@@ -9,7 +9,7 @@
 #import "ViewController.h"
 
 #import "TXBaseRequest.h"
-
+#import "TXTimeHelper.h"
 
 @interface ViewController ()
 
@@ -22,6 +22,7 @@
     [super viewDidLoad];
 
     
+    NSLog(@"时间：%@", [TXTimeHelper getHelloStringByLocalTime]);
     
 }
 

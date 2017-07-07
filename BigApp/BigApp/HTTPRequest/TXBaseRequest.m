@@ -44,6 +44,8 @@
  */
 - (NSURLSessionDataTask *)startWithMethod:(TXHTTPType)methodType params:(id)params completion:(TXHTTPRequestCompletion)completion {
     
+    
+    
     NSURLSessionDataTask *task = nil;
     self.completionBlock = completion;
     self.sessionManager = [self sessionManagerWithParams:params];
@@ -83,7 +85,9 @@
 
 }
 
-
+/**
+ *  初始化AFHTTPSessionManager
+ */
 - (AFHTTPSessionManager *)sessionManagerWithParams:(NSDictionary *)params {
     
     NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
