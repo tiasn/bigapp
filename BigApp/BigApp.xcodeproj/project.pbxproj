@@ -14,6 +14,9 @@
 		354A86651F0CCB9D00C74858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 354A86641F0CCB9D00C74858 /* Assets.xcassets */; };
 		354A86681F0CCB9D00C74858 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 354A86661F0CCB9D00C74858 /* LaunchScreen.storyboard */; };
 		354A86721F0CCCF400C74858 /* TXBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 354A86711F0CCCF400C74858 /* TXBaseRequest.m */; };
+		356E58821F18A3B600C80D24 /* UIImage+TX.m in Sources */ = {isa = PBXBuildFile; fileRef = 356E58811F18A3B600C80D24 /* UIImage+TX.m */; };
+		356E58851F18A4DB00C80D24 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 356E58841F18A4DB00C80D24 /* Foundation+Log.m */; };
+		356E58881F18A51000C80D24 /* UIView+TX.m in Sources */ = {isa = PBXBuildFile; fileRef = 356E58871F18A51000C80D24 /* UIView+TX.m */; };
 		35DDED061F0F59C9008E476D /* TXTimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DDED051F0F59C9008E476D /* TXTimeHelper.m */; };
 		35DDED0A1F0F5A50008E476D /* TXMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DDED091F0F5A50008E476D /* TXMacro.m */; };
 		35DDED101F0F5E5A008E476D /* TXBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DDED0F1F0F5E5A008E476D /* TXBaseViewController.m */; };
@@ -33,6 +36,11 @@
 		354A86691F0CCB9D00C74858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		354A86701F0CCCF400C74858 /* TXBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXBaseRequest.h; sourceTree = "<group>"; };
 		354A86711F0CCCF400C74858 /* TXBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXBaseRequest.m; sourceTree = "<group>"; };
+		356E58801F18A3B600C80D24 /* UIImage+TX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TX.h"; sourceTree = "<group>"; };
+		356E58811F18A3B600C80D24 /* UIImage+TX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TX.m"; sourceTree = "<group>"; };
+		356E58841F18A4DB00C80D24 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		356E58861F18A51000C80D24 /* UIView+TX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TX.h"; sourceTree = "<group>"; };
+		356E58871F18A51000C80D24 /* UIView+TX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TX.m"; sourceTree = "<group>"; };
 		35DDED041F0F59C9008E476D /* TXTimeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXTimeHelper.h; sourceTree = "<group>"; };
 		35DDED051F0F59C9008E476D /* TXTimeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXTimeHelper.m; sourceTree = "<group>"; };
 		35DDED081F0F5A50008E476D /* TXMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXMacro.h; sourceTree = "<group>"; };
@@ -87,6 +95,7 @@
 		354A86571F0CCB9D00C74858 /* BigApp */ = {
 			isa = PBXGroup;
 			children = (
+				35DDED111F0F658E008E476D /* Other */,
 				35DDED0C1F0F5E1F008E476D /* General */,
 				35DDED071F0F5A3C008E476D /* TXMacro */,
 				35DDED031F0F59B0008E476D /* TXHelper */,
@@ -122,6 +131,25 @@
 			path = HTTPRequest;
 			sourceTree = "<group>";
 		};
+		356E587F1F18A37F00C80D24 /* Catagory */ = {
+			isa = PBXGroup;
+			children = (
+				356E58801F18A3B600C80D24 /* UIImage+TX.h */,
+				356E58811F18A3B600C80D24 /* UIImage+TX.m */,
+				356E58861F18A51000C80D24 /* UIView+TX.h */,
+				356E58871F18A51000C80D24 /* UIView+TX.m */,
+			);
+			path = Catagory;
+			sourceTree = "<group>";
+		};
+		356E58831F18A4D500C80D24 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				356E58841F18A4DB00C80D24 /* Foundation+Log.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 		35DDED031F0F59B0008E476D /* TXHelper */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +183,15 @@
 				35DDED0F1F0F5E5A008E476D /* TXBaseViewController.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		35DDED111F0F658E008E476D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				356E58831F18A4D500C80D24 /* Tool */,
+				356E587F1F18A37F00C80D24 /* Catagory */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		A3C271A921B293498925CC33 /* Frameworks */ = {
@@ -294,8 +331,11 @@
 				354A865D1F0CCB9D00C74858 /* AppDelegate.m in Sources */,
 				35DDED061F0F59C9008E476D /* TXTimeHelper.m in Sources */,
 				354A86721F0CCCF400C74858 /* TXBaseRequest.m in Sources */,
+				356E58851F18A4DB00C80D24 /* Foundation+Log.m in Sources */,
 				35DDED0A1F0F5A50008E476D /* TXMacro.m in Sources */,
 				354A865A1F0CCB9D00C74858 /* main.m in Sources */,
+				356E58881F18A51000C80D24 /* UIView+TX.m in Sources */,
+				356E58821F18A3B600C80D24 /* UIImage+TX.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +462,11 @@
 				INFOPLIST_FILE = BigApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"SDWebImage\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tiasn.BigApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -438,6 +483,11 @@
 				INFOPLIST_FILE = BigApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"SDWebImage\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tiasn.BigApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

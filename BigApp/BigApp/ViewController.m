@@ -11,6 +11,9 @@
 #import "TXBaseRequest.h"
 #import "TXTimeHelper.h"
 
+//#import "UIImageView+WebCache.h"
+
+
 @interface ViewController ()
 
 @end
@@ -20,6 +23,9 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+
+    
+    
 
     
     NSLog(@"时间：%@", [TXTimeHelper getHelloStringByLocalTime]);
