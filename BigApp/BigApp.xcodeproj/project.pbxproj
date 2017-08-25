@@ -17,6 +17,7 @@
 		356E58821F18A3B600C80D24 /* UIImage+TX.m in Sources */ = {isa = PBXBuildFile; fileRef = 356E58811F18A3B600C80D24 /* UIImage+TX.m */; };
 		356E58851F18A4DB00C80D24 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 356E58841F18A4DB00C80D24 /* Foundation+Log.m */; };
 		356E58881F18A51000C80D24 /* UIView+TX.m in Sources */ = {isa = PBXBuildFile; fileRef = 356E58871F18A51000C80D24 /* UIView+TX.m */; };
+		35B28E3E1F4FBDBE00C497C7 /* KILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B28E3D1F4FBDBE00C497C7 /* KILabel.m */; };
 		35DDED061F0F59C9008E476D /* TXTimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DDED051F0F59C9008E476D /* TXTimeHelper.m */; };
 		35DDED0A1F0F5A50008E476D /* TXMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DDED091F0F5A50008E476D /* TXMacro.m */; };
 		35DDED101F0F5E5A008E476D /* TXBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DDED0F1F0F5E5A008E476D /* TXBaseViewController.m */; };
@@ -41,6 +42,8 @@
 		356E58841F18A4DB00C80D24 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		356E58861F18A51000C80D24 /* UIView+TX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TX.h"; sourceTree = "<group>"; };
 		356E58871F18A51000C80D24 /* UIView+TX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TX.m"; sourceTree = "<group>"; };
+		35B28E3C1F4FBDBE00C497C7 /* KILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KILabel.h; sourceTree = "<group>"; };
+		35B28E3D1F4FBDBE00C497C7 /* KILabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KILabel.m; sourceTree = "<group>"; };
 		35DDED041F0F59C9008E476D /* TXTimeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXTimeHelper.h; sourceTree = "<group>"; };
 		35DDED051F0F59C9008E476D /* TXTimeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXTimeHelper.m; sourceTree = "<group>"; };
 		35DDED081F0F5A50008E476D /* TXMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXMacro.h; sourceTree = "<group>"; };
@@ -95,6 +98,7 @@
 		354A86571F0CCB9D00C74858 /* BigApp */ = {
 			isa = PBXGroup;
 			children = (
+				35B28E3A1F4FBDB200C497C7 /* Vendors */,
 				35DDED111F0F658E008E476D /* Other */,
 				35DDED0C1F0F5E1F008E476D /* General */,
 				35DDED071F0F5A3C008E476D /* TXMacro */,
@@ -148,6 +152,23 @@
 				356E58841F18A4DB00C80D24 /* Foundation+Log.m */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		35B28E3A1F4FBDB200C497C7 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				35B28E3B1F4FBDBE00C497C7 /* KILabel */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		35B28E3B1F4FBDBE00C497C7 /* KILabel */ = {
+			isa = PBXGroup;
+			children = (
+				35B28E3C1F4FBDBE00C497C7 /* KILabel.h */,
+				35B28E3D1F4FBDBE00C497C7 /* KILabel.m */,
+			);
+			path = KILabel;
 			sourceTree = "<group>";
 		};
 		35DDED031F0F59B0008E476D /* TXHelper */ = {
@@ -330,6 +351,7 @@
 				354A86601F0CCB9D00C74858 /* ViewController.m in Sources */,
 				354A865D1F0CCB9D00C74858 /* AppDelegate.m in Sources */,
 				35DDED061F0F59C9008E476D /* TXTimeHelper.m in Sources */,
+				35B28E3E1F4FBDBE00C497C7 /* KILabel.m in Sources */,
 				354A86721F0CCCF400C74858 /* TXBaseRequest.m in Sources */,
 				356E58851F18A4DB00C80D24 /* Foundation+Log.m in Sources */,
 				35DDED0A1F0F5A50008E476D /* TXMacro.m in Sources */,
