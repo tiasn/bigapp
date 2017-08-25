@@ -39,11 +39,11 @@ static NSString *const kSectionHeader = @"UICollectionElementKindSectionHeader";
 
 //--------------------------- 【颜色】 ------------------------------//
 
-#define LNRGB(r,g,b)    LNRGBA(r,g,b,1.0)
-#define LNRGBA(r,g,b,a) [UIColor colorWithRed:(r) / 256.0 green:(g) / 256.0 blue:(b) / 256.0 alpha:a]
-#define LNRandomColor   [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0];
-#define LNUnifiedBgColor RGB(206, 206, 206)
-#define LNClearColor [UIColor clearColor]
+#define TXRGB(r,g,b)    TXRGBA(r,g,b,1.0)
+#define TXRGBA(r,g,b,a) [UIColor colorWithRed:(r) / 256.0 green:(g) / 256.0 blue:(b) / 256.0 alpha:a]
+#define TXRandomColor   [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0];
+#define TXUnifiedBgColor RGB(206, 206, 206)
+#define TXClearColor [UIColor clearColor]
 
 // 获取Caches缓存文件夹路径
 #define CachesPath [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
@@ -55,7 +55,7 @@ static NSString *const kSectionHeader = @"UICollectionElementKindSectionHeader";
 
 #ifdef  DEBUG // 测试
 #define TXLog(...) NSLog(__VA_ARGS__)
-#define TXFunc  LNLog(@"%s",__func__)
+#define TXFunc  TXLog(@"%s",__func__)
 #define TXFuncline TXLog(@"%s, line = %d, %@",__FUNCTION__,__LINE__,[NSThread currentThread]);
 
 #else   // 发布

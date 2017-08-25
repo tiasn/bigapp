@@ -25,7 +25,7 @@
     [super viewDidLoad];
 
     
-    
+    self.view.backgroundColor = TXRandomColor;
 
     
     NSLog(@"时间：%@", [TXTimeHelper getHelloStringByLocalTime]);
